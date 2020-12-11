@@ -27,5 +27,5 @@ func (r Repository) Handle(in invocation) (interface{}, error) {
 		return handler.call(in.payload())
 	}
 
-	return nil, fmt.Errorf("No resolver found: %s", in.Resolve)
+	return nil, fmt.Errorf("no resolver found: %s", in.Resolve)
 }
